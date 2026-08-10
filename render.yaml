@@ -11,6 +11,7 @@ services:
     region: singapore
     dockerfilePath: ./Dockerfile
     healthCheckPath: /healthz
+    autoDeployTrigger: off
     envVars:
       - key: API_TOKEN
         sync: false
