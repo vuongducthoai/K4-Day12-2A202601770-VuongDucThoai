@@ -16,17 +16,6 @@ gọi được, có bảo mật, có giới hạn chi phí, và không sập khi
 | Thảo luận **cách tiếp cận** với bạn cùng lớp | Nhờ người khác làm hộ, kể cả một phần |
 | Dùng AI để giải thích lỗi | Nộp code mà bạn không giải thích được |
 
-**Cách kiểm tra:** Lab Coach sẽ chọn ngẫu nhiên học viên để hỏi
-trực tiếp về code trong bài nộp. Không giải thích được phần mình viết → điểm
-phần đó bị hủy.
-
-**Phát hiện hai bài trùng nhau bất thường (cùng lỗi chính tả, cùng comment,
-cùng cấu trúc lạ): cả hai bài đều 0 điểm**, không phân biệt ai chép của ai.
-
-> Lưu ý: bài của các khóa trước đang công khai trên GitHub, nhưng **nội dung của bản K4 khác so với các bài đó** — khác endpoint, khác kiểu xác thực, khác thuật toán
-> rate limit, khác tên trường trong response. Chép về sẽ rớt gần như toàn bộ
-> test, và Lab Coach nhìn ra ngay.
-
 ---
 
 ## 📦 Cách Đặt Tên Repository

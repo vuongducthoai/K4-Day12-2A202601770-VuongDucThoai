@@ -7,27 +7,34 @@ services:
   - type: web
     name: day12-chat
     runtime: docker
-    dockerfilePath: ./Dockerfile
     plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
     healthCheckPath: /healthz
     envVars:
       - key: API_TOKEN
         sync: false
+
       - key: LOG_LEVEL
         value: INFO
+
       - key: BUCKET_CAPACITY
         value: "10"
+
       - key: REFILL_PER_MINUTE
         value: "10"
+
       - key: DAILY_BUDGET_USD
         value: "1.0"
+
       - key: REDIS_URL
         fromService:
           name: day12-chat-redis
           type: redis
           property: connectionString
 
-  - type: redis
+  - type: keyvalue
     name: day12-chat-redis
     plan: free
+    region: singapore
     ipAllowList: []
